@@ -4,6 +4,12 @@
 
 ## Moduuli 1
 
-Tein tehtävät 1 ja 2.
+Tein tehtävät.
 
-Tein tehtävät 3, 4 ja 5
+## Moduuli 2
+
+Tein tehtävät.
+
+## Moduuli 3
+
+Tein tehtävät 1-6.
