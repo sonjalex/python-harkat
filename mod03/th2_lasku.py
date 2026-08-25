@@ -8,4 +8,4 @@ radius_float = float(säde)
 pintaala = (math.pi * radius_float**2)
 
 ##Tulosta pinta-ala
-print(f"Jos ympyrän säde on {säde}, sen pinta-ala on {pintaala}")
+print(f"Jos ympyrän säde on {säde: .2f}, sen pinta-ala on {pintaala: .2f}")

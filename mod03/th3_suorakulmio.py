@@ -13,4 +13,4 @@ piiri = (kanta + korkeus + kanta + korkeus)
 pintaala = (kanta * korkeus)
 
 ##Tulosta vastaukset
-print(f"Suorakulmion piiri on {piiri}, ja sen pinta-ala on {pintaala}")
+print(f"Suorakulmion piiri on{piiri: .2f}, ja sen pinta-ala on{pintaala: .2f}")

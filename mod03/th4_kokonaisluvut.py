@@ -12,4 +12,4 @@ tulo = (kokonaisluku1 * kokonaisluku2 * kokonaisluku3)
 ##Laske keskiarvo
 keskiarvo = ((kokonaisluku1 + kokonaisluku2 + kokonaisluku3) / 3)
 
-print(f"Lukujen summa on {summa}, niiden tulo on {tulo} ja keskiarvo on {keskiarvo}") 
+print(f"Lukujen summa on{summa: .2f}, niiden tulo on{tulo: .2f} ja keskiarvo on{keskiarvo: .2f}") 

@@ -26,4 +26,4 @@ grammat_lasku = ((luodit + luodit_lasku) * 13.3)
 kilogramma = (grammat_lasku // 1000)
 jakojäännös = (grammat_lasku % 1000)
 
-print(f"{kilogramma: .0f} kilogrammaa ja {jakojäännös: .2f} grammaa")
+print(f"Massa nykymittojen mukaan on{kilogramma: .0f} kilogrammaa ja{jakojäännös: .2f} grammaa")
