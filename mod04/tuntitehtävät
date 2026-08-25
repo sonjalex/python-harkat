@@ -1,0 +1,5 @@
+1. Lämpötila < 0
+2. Opintopisteet => 150
+3. Sää =='lämmin' and sää !='pilvinen'
+4. Koko < 10 and koko <= 65 or ikä > 10
+5. Päivä != "sunnuntai" and (ikä < 12 or ikä > 65) or päivä = "sunnuntai" and ikä < 5

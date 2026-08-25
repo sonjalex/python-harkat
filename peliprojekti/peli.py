@@ -1,3 +1,3 @@
 nimi = input("Syötä pelaajan nimi: ")
 ikä = input("Syötä pelaajan ikä: ")
-print("Hei " + nimi + ", tervetuloa!")
+print("Hei " + nimi + ", tervetuloa! Ikäsi on " + ikä)
