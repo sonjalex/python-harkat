@@ -1,7 +1,7 @@
 sukupuoli = str(input("Mikä on biologinen sukupuolesi? "))
 arvo = float(input("Mikä on hemoglobiiniarvosi? "))
 
-if sukupuoli == "nainen" and 117 < arvo < 176:
+if sukupuoli == "nainen" and 117 <= arvo < 176:
     print("Hemoglobiiniarvosi on normaali.")
 elif sukupuoli == "nainen" and arvo < 117:
     print("Hemoglobiiniarvosi on alhainen.")
