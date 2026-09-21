@@ -29,3 +29,13 @@ Tein tehtävät 1-4.
 ## Moduuli 7
 
 Tein tehtävät 1-6.
+
+## Moduuli 8
+
+## Moduuli 9
+
+Tein tehtävät 1-4.
+
+## Moduuli 10
+
+Tein tehtävät 1-4.
