@@ -1,0 +1,13 @@
+# Luokka Auto ja aliluokat Sähköauto ja Polttomoottoriauto
+
+class Auto:
+    def __init__(self, rekisterinumero):
+        self.rekisterinumero = rekisterinumero
+
+class Sähköauto(Auto):
+# Akkukapasiteetti kilowattitunteina
+    pass
+
+class Polttomoottoriauto(Auto):
+# Bensatankin koko litroina
+    pass

@@ -3,7 +3,7 @@ class Auto:
         self.rekisteritunnus = rekisteritunnus
         self.huippunopeus = huippunopeus
         self.nopeus = 0
-        self.matka = 0
+        self.matka = 0  
     def auto(self):
         print(f"Auton rekisteritunnus on {self.rekisteritunnus}, huippunopeus {self.huippunopeus} km/h, tämänhetkinen nopeus {self.nopeus} km/h ja kuljettu matka {self.matka:.0f} km")
     def kiihdytä(self, kiihtyminen):

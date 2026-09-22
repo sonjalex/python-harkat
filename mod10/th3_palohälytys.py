@@ -31,6 +31,7 @@ class Talo:
     def __init__(self, alin, ylin, hissien_maara):
         self.alin = alin # Ominaisuus
         self.ylin = ylin # Ominaisuus
+        self.nykyinen = alin
         self.hissit = []
         for i in range(hissien_maara):
             self.hissit.append(Hissi(alin, ylin))
@@ -40,7 +41,7 @@ class Talo:
     def palohälytys(self):
         for hissi in self.hissit:
             hissi.siirry_kerrokseen(1)
-        print(f"Palohälytys, siirry alimpaan kerrokseen")
+        print(f"Palohälytys, siirry alimpaan kerrokseen {self.nykyinen}")
 
 # Pääohjelma
 talo1 = Talo(1, 10, 3) # Kerrokset 1 - 10, 3 hissiä
