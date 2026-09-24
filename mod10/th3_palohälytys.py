@@ -40,9 +40,10 @@ class Talo:
         self.hissit[hissin_numero].siirry_kerrokseen(kerros)
     def palohälytys(self):
         for hissi in self.hissit:
-            hissi.siirry_kerrokseen(1)
+            hissi.siirry_kerrokseen(self.alin)
         print(f"Palohälytys, siirry alimpaan kerrokseen {self.nykyinen}")
 
 # Pääohjelma
 talo1 = Talo(1, 10, 3) # Kerrokset 1 - 10, 3 hissiä
+talo1.aja_hissia(2, 4)
 talo1.palohälytys()

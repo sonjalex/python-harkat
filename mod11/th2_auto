@@ -1,13 +1,58 @@
 # Luokka Auto ja aliluokat Sähköauto ja Polttomoottoriauto
 
 class Auto:
-    def __init__(self, rekisterinumero):
+    def __init__(self, rekisterinumero, huippunopeus, nopeus):
         self.rekisterinumero = rekisterinumero
+        self.huippunopeus = huippunopeus
+        self.nopeus = nopeus
+        self.matka = 0
 
-class Sähköauto(Auto):
+
 # Akkukapasiteetti kilowattitunteina
-    pass
+class Sähköauto(Auto):
+    def __init__(self, rekisterinumero, huippunopeus, nopeus, akkukapasiteetti):
+        super().__init__(rekisterinumero, huippunopeus, nopeus)
+        self.akkukapasiteetti = akkukapasiteetti
 
-class Polttomoottoriauto(Auto):
+    def kiihdytä(self, kiihtyminen):
+        self.nopeus += kiihtyminen
+        if self.nopeus > self.huippunopeus:
+            self.nopeus = self.huippunopeus
+        if self.nopeus < 0:
+            self.nopeus = 0
+
+    def kulje(self, tunti):
+        self.matka += self.nopeus * tunti
+
+    def tulosta_sähkö(self):
+        print("Auto on ajanut", self.matka, "kilomteriä ja sen nopeus on ollut", self.nopeus, "km/h")
+
 # Bensatankin koko litroina
-    pass
+class Polttomoottoriauto(Auto):
+    def __init__(self, rekisterinumero, huippunopeus, nopeus, bensatankin_koko):
+        super().__init__(rekisterinumero, huippunopeus, nopeus)
+        self.bensatankin_koko = bensatankin_koko
+
+    def kiihdytä(self, kiihtyminen):
+            self.nopeus += kiihtyminen
+            if self.nopeus > self.huippunopeus:
+                self.nopeus = self.huippunopeus
+            if self.nopeus < 0:
+                self.nopeus = 0
+
+    def kulje(self, tunti):
+        self.matka += self.nopeus * tunti
+
+    def tulosta_polttomoottori(self):
+        print("Auto on ajanut", self.matka, "kilomteriä ja sen nopeus on ollut", self.nopeus, "km/h")
+        
+
+auto1 = Sähköauto("ABC-15", 180, 60, 52.5)
+auto2 = Polttomoottoriauto("ADC-123", 165, 70, 32.2)
+
+
+auto1.kulje(3)
+auto2.kulje(3)
+
+auto1.tulosta_sähkö()
+auto2.tulosta_polttomoottori()
