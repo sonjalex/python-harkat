@@ -42,6 +42,7 @@ class Kilpailu:
                 return True
         return False
 
+#
 auto1 = Auto("ABC-1", random.randint(100, 200))
 auto2 = Auto("ABC-2", random.randint(100, 200))
 auto3 = Auto("ABC-3", random.randint(100, 200))

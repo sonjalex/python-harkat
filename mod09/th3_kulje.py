@@ -16,6 +16,7 @@ class Auto:
         self.kiihdytä(-200)
     def kulje(self, tunti):
         self.matka += self.nopeus * tunti
+        # self.matka = self.matka + (tunti * self.nopeus)
 
 
 auto1 = Auto("ABC-123", 142)
