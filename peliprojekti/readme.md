@@ -12,3 +12,5 @@ Kullekkin eläimelle sopivaa ruokaa ei ole vielä määritelty.
 
 Projektin luokat toimivat moitteetta ilman valikko luokkaa, joka aiheuttaa TypeError virheen, en osaa tätä korjata nyt ja oletettavasti tarvitsen apua siihen myöhemmin.
 - Päävalikko.valikko() missing 3 required positional arguments
+
+Tiedostonkäsittelyn tehtävä tehty suurinpiirtein, siirryin varsinaisen peliprojektin pariin toiseen github tiedostoon

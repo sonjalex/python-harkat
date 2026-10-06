@@ -1,0 +1,10 @@
+Ohjeet
+
+Pelin tarkoituksena on pitää huolta saamastasi lemmikistä! Valitse lemmikillesi sopiva peti, ruoka ja aktiviteetit voittaaksesi pelin.
+
+Peli valitsee satunnaisesti lemmikin sinulle - tässä on lista mahdollisista eläimistä:
+
+- Kissa
+- Koira
+- Hamsteri
+- Hevonen
