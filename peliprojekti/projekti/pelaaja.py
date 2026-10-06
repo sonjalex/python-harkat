@@ -1,15 +1,51 @@
-class Pelaaja:
-    def __init__(self, nimi, ikä):
-        self.nimi = nimi
+kori = []
+
+class Ruokakauppa:
+    def __init__(self, ikä, ruoka, tulosta):
+        super().__init__(ikä)
         self.ikä = ikä
+        self.ruoka = ruoka
+        self.tulosta = tulosta
+        self.kori = []
 
-    def nimi():
-        pelaajan_nimi = input("Syötä pelaajan nimi: ")
-        print(f"\nHei {pelaajan_nimi} tervetuloa!")
+    def ruoka():
+        ruokia = input("Menet eläinkauppaan etsimään lemmikillesi ruokaa, mitä valitset hyllystä? (tyhjä lopettaa) ")
+        while ruokia != "":
+            kori.append(ruokia)
+            print(f"{ruokia} on lisätty ostoskoriin")
+            ruokia = input("Lisää ruoka koriisi (tyhjä lopettaa): ")
 
-    def ikä():
-        ikä = int(input("Syötä pelaajan ikä: "))
-        if ikä >= 12:
-            print(f"Ikäsi on {ikä}.")
+    def tulosta():
+        if len(kori) == 0:
+            print("Ostoskorissasi ei ole mitään! Ethän jätä lemmikkiäsi ruokkimatta?")
         else:
-            print("Olet alaikäinen.")
+            print("Ostoskorissasi on:")
+            for ruoat in kori:
+                print(">", ruoat)
+
+class Tavara:
+    def __init__(self, nimi):
+        self.nimi = nimi
+
+class Pelaaja(Ruokakauppa):
+    def __init__(self, nimi, käyttäjä, ikä):
+        self.nimi = nimi
+        self.käyttäjä = käyttäjä
+        self.ikä = ikä
+        self.kori = []
+
+import random
+
+eläimiä = ["kissa", "koira", "hamsteri", "hevonen"]
+
+class Hoivattava:
+    def __init__(self, hoivattava, arvottu_hoivattava):
+        self.hoivattava = hoivattava
+        self.arvottu_hoivattava = arvottu_hoivattava
+
+    def hoivattava():
+        print("\nTässä on lista eläimistä joista saat yhden satunnaisesti hoidettavaksesi: ")
+        for eläin in eläimiä:
+            print(">", eläin)
+        arvottu_hoivattava = random.choice(eläimiä)
+        print(f"\nSinulla on: {arvottu_hoivattava}")
