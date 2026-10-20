@@ -1,14 +1,12 @@
-# Kevät = maaliskuu, huhtikuu, toukokuu
-# Kesä = kesäkuu, heinäkuu, elokuu
-# Syksy = syyskuu, lokakuu, marraskuu
-# Talvi = joulukuu, tammikuu, helmikuu
-
 kuukausi = ("tammikuu", "helmikuu", "maaliskuu", "huhtikuu", "toukokuu", "kesäkuu", "heinäkuu", "elokuu", "syyskuu", "lokakuu", "marraskuu", "joulukuu")
 
-() = kuukausi
+vuodenajat = ("talvi", "talvi", "kevät", "kevät", "kevät", "kesä", "kesä", "kesä", "syksy", "syksy", "syksy", "talvi")
 
 vuodenaika = int(input("Syötä kuukauden numero: "))
 
-vuodenajat = kuukausi[vuodenaika - 1]
+# Haetaan kuukauden nimen ja vuodenajan indeksit (numero - 1)
+valittu_kuukausi = kuukausi[vuodenaika - 1]
+valittu_vuodenaika = vuodenajat[vuodenaika - 1]
 
-print(f"{kuukausi}, {vuodenaika}")
+# Tulostetaan kuukauden nimi ja sitä vastaava vuodenaika
+print(f"{valittu_kuukausi}, {valittu_vuodenaika}")
